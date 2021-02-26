@@ -1,0 +1,16 @@
+Tipos de teste:
+
+    Necessário antes saber sobre a pirâmide de testes.
+    https://medium.com/creditas-tech/a-pir%C3%A2mide-de-testes-a0faec465cc2
+    https://medium.com/luizalabs/pir%C3%A2mide-de-testes-definindo-uma-boa-su%C3%ADte-de-testes-para-seu-software-a6864886f29b
+    https://agile.inc/a-importancia-da-piramide-de-testes-para-a-qualidade-de-softwares/
+
+
+    A pirâmide focada no projeto frontend
+
+    e2e:
+    integração:
+    unitários:
+        Componentes
+        Funções
+        Snapshots
