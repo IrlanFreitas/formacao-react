@@ -1,0 +1,13 @@
+O que testar numa coisa simples:
+
+	CardNota
+		Testar o deletar - Testar se saiu da tela
+		Testar se achou o título, categoria e o texto
+
+	Formulario
+		Não criar nota no CardVazio (Catar o submit)
+		Testar se a lista está com os itens - Mudar o comportamento ?
+
+	Adicionar
+		Não deixar enviar vazio
+		Testar se a categoria apareceu na tela depois de digitado
