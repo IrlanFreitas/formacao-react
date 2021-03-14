@@ -6,7 +6,7 @@ import './styles.css'
 export default class ListaDeNotas extends Component {
 
   constructor() {
-    super() 
+    super()
     this.state = {
       notas: []
     }
@@ -21,27 +21,22 @@ export default class ListaDeNotas extends Component {
   componentWillMount() {
     this.props.notas.desinscrever(this._novasNotas)
   }
-  
+
   _novasNotas(notas) {
     this.setState({ ...this.state, notas })
   }
 
   render() {
     return (
-      <ul className="lista-notas">
-        {this.state.notas.map((nota, index) => {
-          return (
-            
-              <li className="lista-notas_item" key={index}>
-                <CardNota deletarNota={this.props.deletarNota}
-                  titulo={nota.titulo}
-                  texto={nota.texto}
-                  categoria={nota.categoria}
-                  index={index} />
-              </li>
-            
-          );
-        })}
+      <ul data-testid="lista-notas" className="lista-notas">
+        {this.state.notas.map((nota, index) =>
+        (<li className="lista-notas_item" key={index}>
+          <CardNota deletarNota={this.props.deletarNota}
+            titulo={nota.titulo}
+            texto={nota.texto}
+            categoria={nota.categoria}
+            index={index} />
+        </li>))}
       </ul>
     );
   }

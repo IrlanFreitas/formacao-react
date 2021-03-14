@@ -1,13 +1,17 @@
 O que testar numa coisa simples:
 
-	CardNota
+	[x] CardNota
 		Testar o deletar - Testar se saiu da tela
 		Testar se achou o título, categoria e o texto
+    
+	[ ] ListaDeNotas - Problemas com as classes e ciclo de vida
+		Testar se a renderizou todos os cards
+		Testar se a função tirou os cards da tela
 
-	Formulario
+	[ ] Formulário
 		Não criar nota no CardVazio (Catar o submit)
 		Testar se a lista está com os itens - Mudar o comportamento ?
 
-	Adicionar
+	[ ] Adicionar
 		Não deixar enviar vazio
 		Testar se a categoria apareceu na tela depois de digitado
