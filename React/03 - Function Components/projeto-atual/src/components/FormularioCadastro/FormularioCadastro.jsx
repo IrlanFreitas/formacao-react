@@ -32,17 +32,33 @@ export default function FormularioCadastro({ onSubmit, validarCPF }) {
         <form onSubmit={(event) => { event.preventDefault(); onSubmit(form); }} >
             <FormControl fullWidth  >
 
-                <TextField value={form.nome} onChange={handleForm} id="nome" name="nome" label="Nome" variant="outlined" margin="normal" />
+                <TextField value={form.nome}
+                    onChange={handleForm}
+                    required
+                    id="nome"
+                    name="nome"
+                    label="Nome"
+                    variant="outlined"
+                    margin="normal" />
 
-                <TextField value={form.sobrenome} onChange={handleForm} id="sobrenome" name="sobrenome" label="Sobrenome" variant="outlined" margin="normal" />
+                <TextField value={form.sobrenome}
+                    onChange={handleForm}
+                    required
+                    id="sobrenome"
+                    name="sobrenome"
+                    label="Sobrenome"
+                    variant="outlined"
+                    margin="normal" />
 
                 <TextField value={form.cpf}
                     id="cpf"
                     onChange={handleForm}
+                    required
+                    data-testid="cpf"
                     error={!errors.cpf.valid}
                     helperText={errors.cpf.message}
-                    onBlur={event => { 
-                        setErrors({cpf: validarCPF(event.target.value)})
+                    onBlur={event => {
+                        setErrors({ cpf: validarCPF(event.target.value) })
                     }}
                     name="cpf"
                     label="Cpf"
@@ -62,7 +78,7 @@ export default function FormularioCadastro({ onSubmit, validarCPF }) {
                     />
                 </FormGroup>
 
-                <Button fullWidth={false} variant="contained" color="primary" type="submit">Cadastrar</Button>
+                <Button variant="contained" color="primary" type="submit">Cadastrar</Button>
             </FormControl>
         </form>
     )
