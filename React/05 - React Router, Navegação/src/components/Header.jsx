@@ -25,10 +25,10 @@ export default function Header() {
             <nav className="menu-cabecalho" >
                 <ul className="menu-itens" >
                     <li>
-                        <Link to="/" className="menu-item menu-item--entrar">Entrar</Link>
+                        <Link to="#" className="menu-item menu-item--entrar">Entrar</Link>
                     </li>
                     <li>
-                        <Link to="/" className="menu-item ">Produtos</Link>
+                        <Link to="#" className="menu-item ">Produtos</Link>
                     </li>
                     <li>
                         <Link to="/sobre" className="menu-item ">Sobre</Link>
